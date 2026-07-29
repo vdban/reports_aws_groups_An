@@ -1,0 +1,21 @@
+# Thư viện Node.js
+node_modules/
+
+# Local dev database
+data/
+
+# File cấu hình môi trường 
+.env
+
+# Các file log lỗi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# AWS IoT Certificates (backend bridge)
+certs/
+# Virtual device (ESP32 thay thế)
+certs-device/
+*.pem
+*.crt
+*.key
