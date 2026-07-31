@@ -68,7 +68,7 @@ Phần cloud của SmartHome_IoT trong kỳ thực tập **deploy và chạy tr�
 
 ## 5. Sơ đồ / ảnh đính kèm
 
-Đặt file trong `static/images/` và gắn link tại đây:
+Đặt file trong `/images/` và gắn link tại đây:
 
 | Tài nguyên | Đường dẫn / ghi chú |
 | ---------- | ------------------- |

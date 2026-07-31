@@ -68,7 +68,7 @@ SmartHome_IoT internship deploy targets **AWS only** for cloud infrastructure:
 
 ## 5. Architecture / screenshots (attachments)
 
-Place files under `static/images/` and link here:
+Place files under `/images/` and link here:
 
 | Asset | Path / note |
 | ----- | ----------- |

@@ -7,17 +7,17 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
- **Họ và tên:** Lê Hoàng Phúc
+ **Họ và tên:** Vũ Đức Bình An
 
- **Số điện thoại:** *(cập nhật)*
+ **Số điện thoại:** 0376368179
 
- **Email:** *(cập nhật)*
+ **Email:** an.vu10050@hcmut.edu.vn
 
- **Trường:** Ho Chi Minh City University of Technology (HCMUT)
+ **Trường:** Đại học Bách Khoa - ĐHQG.TPHCM (HCMUT)
 
- **Ngành:** Công nghệ thông tin
+ **Ngành:** Kỹ thuật máy tính
 
- **Lớp:** AWS082025
+ **Lớp:** MT23KTM1
 
  **Công ty thực tập:** Công ty TNHH Amazon Web Services Việt Nam
 

@@ -13,46 +13,19 @@ Amazon DynamoDB vừa bổ sung nhiều cải tiến về khả năng quan sát 
 ## Các điểm chính cần nắm:
 
 - Exception khi xảy ra throttling được mở rộng, cung cấp thông tin chi tiết về nguyên nhân và tài nguyên bị ảnh hưởng (Table hoặc Global Secondary Index - GSI).
-- Các mã lý do (Reason) mới như:
+- Bổ sung các mã lỗi throttling mới, ví dụ:
   - `TableWriteProvisionedThroughputExceeded`
   - `TableReadKeyRangeThroughputExceeded`
-  - Giúp xác định nhanh loại throttling đang xảy ra.
-- CloudWatch Metrics được bổ sung nhiều chỉ số mới, phân loại theo từng nguyên nhân:
-  - Provisioned Throughput vượt giới hạn.
-  - Max On-Demand Throughput đạt ngưỡng cấu hình.
-  - Account Throughput Limit.
-  - Key Range Throughput (Hot Partition).
-- CloudWatch Contributor Insights hỗ trợ chế độ **Throttled Keys Only**, chỉ ghi nhận các partition key thực sự gây throttling thay vì toàn bộ lưu lượng truy cập.
-- Chế độ mới giúp:
-  - Dễ dàng phát hiện hot key và hot partition.
-  - Giảm chi phí monitoring so với việc phân tích toàn bộ traffic.
-  - Phù hợp để sử dụng trên môi trường production.
-- AWS cũng cập nhật cách xử lý exception trong một số SDK strongly typed (Java, .NET, Go), khuyến nghị sử dụng kiểm tra kiểu bằng `instanceof` thay vì so sánh chính xác lớp exception nhằm đảm bảo khả năng tương thích với các phiên bản SDK mới.
-- Các cải tiến này giúp việc xác định nguyên nhân throttling và tối ưu thiết kế bảng DynamoDB trở nên nhanh chóng và hiệu quả hơn.
-
-Những tính năng mới đặc biệt hữu ích đối với các hệ thống có lưu lượng truy cập lớn, nơi hiện tượng throttling thường xuyên xảy ra do phân bố dữ liệu không đồng đều hoặc giới hạn thông lượng.
-
----
-
-**…Hình ảnh…**
-
-- Kiến trúc xử lý yêu cầu của Amazon DynamoDB.
-- Ví dụ exception mới hiển thị nguyên nhân throttling.
-- CloudWatch Metrics theo từng loại throttling.
-- Contributor Insights hiển thị Hot Keys.
-
----
-
-**…Link…**
-
-- AWS Database Blog – Enhanced Throttling Observability in Amazon DynamoDB
-
----
-
-**…Hướng dẫn…**
-
-1. Theo dõi các exception khi ứng dụng truy cập DynamoDB.
-2. Xác định nguyên nhân throttling thông qua trường **Reason** trong exception.
-3. Kiểm tra các CloudWatch Metrics mới để xác định loại giới hạn đang gặp phải.
-4. Bật CloudWatch Contributor Insights với chế độ **Throttled Keys Only** để xác định hot partition.
-5. Thực hiện tối ưu capacity, thiết kế partition key hoặc yêu cầu tăng Service Quota nếu cần.
+  - Việc phân tách rõ ràng này giúp người dùng dễ dàng đưa ra phương án khắc phục phù hợp.
+- Amazon CloudWatch cung cấp thêm các metric mới, phân loại throttling theo từng nguyên nhân cụ thể:
+  - Vượt quá thông lượng đã cấp phát (Provisioned Throughput).
+  - Vượt quá thông lượng tối đa của chế độ On-Demand.
+  - Chạm ngưỡng giới hạn của Account.
+  - Vượt quá thông lượng của dải khóa (Key Range Throughput - thường do Hot Partition).
+- CloudWatch Contributor Insights hỗ trợ chế độ **Throttled Keys Only**, chỉ ghi nhận các partition key gây ra throttling thay vì phân tích toàn bộ traffic của ứng dụng.
+- Chế độ mới này mang lại lợi ích:
+  - Dễ dàng xác định hot key và hot partition.
+  - Tiết kiệm chi phí giám sát.
+  - Phù hợp để bật Contributor Insights trên môi trường production mà không làm tăng quá nhiều chi phí.
+- Khuyến cáo cập nhật cách xử lý exception đối với các SDK định kiểu mạnh (Java, .NET, Go). Người dùng nên sử dụng toán tử `instanceof` (hoặc tương đương) thay vì so sánh chính xác tên lớp (class type) để đảm bảo tương thích với các bản cập nhật SDK mới.
+- Những cải tiến này giúp tăng tốc đáng kể quá trình debug và tối ưu hóa hiệu suất cho các ứng dụng sử dụng DynamoDB.

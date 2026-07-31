@@ -8,17 +8,17 @@ chapter: false
 # Internship Report
 
 ### Student Information:
-**Full Name:** Lưu Quang Khải
+**Full Name:** Vũ Đức Bình An
 
- **Phone Number:** 0859809709
+ **Phone Number:** 0376368179
 
- **Email:** khai.luuquangnvc@hcmut.edu.vn
+ **Email:** an.vu10050@hcmut.edu.vn
 
  **University:** Ho Chi Minh City University of Technology (HCMUT)
 
- **Major:** Information Technology
+ **Major:** Computer Engineering
 
- **Class:** AWS082025
+ **Class:** MT23KTM1
 
  **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
