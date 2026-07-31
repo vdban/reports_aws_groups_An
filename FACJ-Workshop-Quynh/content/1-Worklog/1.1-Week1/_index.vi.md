@@ -8,24 +8,21 @@ pre: " <b> 1.1. </b> "
 
 ### Mục tiêu tuần 1:
 
-* Làm quen văn phòng, nội quy thực tập và cách làm việc hàng ngày.
-* Tìm hiểu yêu cầu và deliverable cần đạt để **pass** kỳ thực tập.
-* Xác định roadmap học trong 8 tuần (AWS services + dự án SmartHome_IoT).
-* Tìm nhóm, thảo luận đề tài; **đề xuất ý tưởng dashboard** trong họp nhóm lần đầu.
+* Làm quen môi trường thực tập và yêu cầu pass kỳ thực tập.
+* Lập roadmap 8 tuần; tìm nhóm và thảo luận hướng đề tài.
+* Đề xuất ý tưởng dashboard smart home trong họp nhóm đầu.
 
 ### Công việc thực hiện trong tuần:
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | ---- | --------- | ------------ | ---------------- | ------------------ |
-| 1 | - Tham quan văn phòng; làm quen mentor và các bạn intern <br> - Đọc nội quy (giờ làm việc, giao tiếp, bảo mật thông tin) | 08/06/2026 | 08/06/2026 | Portal FCAJ / tài liệu nội bộ |
-| 2 | - Tìm hiểu tiêu chí pass kỳ thực tập (worklog, báo cáo workshop, demo, đánh giá mentor) <br> - Ghi chú deadline và deliverable bắt buộc | 09/06/2026 | 09/06/2026 | Portal FCAJ |
-| 3 | - Lập roadmap 8 tuần: học AWS (IAM, VPC, EC2, S3, Cognito…) + giai đoạn thiết kế Figma, React dashboard, deploy S3 <br> - Sưu tầm UI smart home tham khảo trên Dribbble, Behance | 10/06/2026 | 10/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Liên hệ và tìm thành viên nhóm <br> - Thảo luận các hướng đề tài (IoT, web, cloud); em ghi chú nhu cầu giao diện người dùng | 11/06/2026 | 11/06/2026 | - |
-| 5 | - Họp nhóm: chọn đề tài **SmartHome_IoT** <br> - Em **đề xuất ý tưởng dashboard**: card cảm biến, bảng điều khiển thiết bị, cảnh báo cửa; phân công vai trò Frontend | 12/06/2026 | 12/06/2026 | Repo SmartHome_IoT |
+| 1 | - Tham quan văn phòng, làm quen mentor và intern; đọc nội quy. | 08/06/2026 | 08/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Tìm hiểu deliverable bắt buộc: worklog, workshop, demo, đánh giá mentor. | 09/06/2026 | 09/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Lập kế hoach học AWS + thiết kế UI; sưu tầm giao diện smart home tham khảo. | 10/06/2026 | 10/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Liên hệ các bạn trong lớp; thảo luận hướng IoT/web/cloud. | 11/06/2026 | 11/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Họp nhóm: chọn SmartHome_IoT; em đề xuất layout dashboard và nhận phần Figma + React. | 12/06/2026 | 12/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
 
 ### Thành quả tuần 1:
 
-* Đã làm quen môi trường văn phòng và nội quy thực tập.
-* Nắm rõ yêu cầu để pass kỳ thực tập.
-* Có roadmap học và công việc frontend trong 8 tuần.
-* Nhóm đã chọn **SmartHome_IoT**; em trình bày ý tưởng dashboard và được giao phụ trách **Figma + React**.
-* Sẵn sàng bắt đầu học AWS và chuẩn bị thiết kế giao diện từ tuần 2.
+* Làm quen môi trường và nội quy thực tập.
+* Có roadmap 8 tuần cho frontend.
+* Vai trò thiết kế và code giao diện được phân công.

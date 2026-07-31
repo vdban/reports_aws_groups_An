@@ -8,23 +8,21 @@ pre: " <b> 1.4. </b> "
 
 ### Mục tiêu tuần 4:
 
-* Học VPC cơ bản — subnet, route table, internet gateway.
-* Cấu hình **Security Group** cho traffic API backend.
-* Mở inbound port **3000** (Express dev) và **8080** (alt/proxy) từ nguồn cho phép.
-* Test kết nối TCP trước khi deploy backend lên EC2.
+* Hiểu cách bảo vệ API qua cấu hình mạng ảo.
+* Mở các cổng cần thiết cho backend giao tiếp với frontend.
+* Đảm bảo chỉ expose đúng phần cần thiết ra ngoài.
 
 ### Công việc thực hiện trong tuần:
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | ---- | --------- | ------------ | ---------------- | ------------------ |
-| 1 | - Xem layout VPC trong AWS account nhóm <br> - Xác định subnet cho EC2 backend | 29/06/2026 | 29/06/2026 | <https://docs.aws.amazon.com/vpc/> |
-| 2 | - Tạo Security Group `sg-smarthome-api` <br> - Thêm inbound: TCP 3000 từ IP nhóm / frontend SG | 30/06/2026 | 30/06/2026 | AWS Console — EC2 Security Groups |
-| 3 | - Thêm inbound: TCP 8080 cho reverse proxy hoặc health check <br> - Giới hạn SSH (22) chỉ IP admin | 01/07/2026 | 01/07/2026 | VPC best practices |
-| 4 | - Gắn SG vào EC2 test <br> - Curl `http://<public-ip>:3000/health` từ máy local | 02/07/2026 | 02/07/2026 | `curl`, SmartHome_IoT `backend/` |
-| 5 | - Ghi rule SG vào bản nháp README repo <br> - Thống nhất port với cấu hình API base URL frontend | 03/07/2026 | 03/07/2026 | Repo SmartHome_IoT |
+| 1 | - Học khái niệm VPC và security group qua tài liệu AWS. | 29/06/2026 | 29/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Rà soát rule inbound/outbound cho máy chạy API. | 30/06/2026 | 30/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Thử kết nối từ máy dev tới cổng API sau khi cấu hình. | 01/07/2026 | 01/07/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Trao đổi với DevOps về rule mạng trước khi deploy thật. | 02/07/2026 | 02/07/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Ghi chú sơ đồ luồng request từ giao diện tới backend. | 03/07/2026 | 03/07/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
 
 ### Thành quả tuần 4:
 
-* Security Group đã cấu hình cho port API 3000 và 8080.
-* Rule inbound tuân thủ least exposure — không mở `0.0.0.0/0` cho API.
-* Em đã verify kết nối port trên instance test.
-* Tầng network sẵn sàng cho EC2 backend tuần 5.
+* Security group phù hợp cho API đã được thống nhất.
+* Em hiểu vì sao frontend gọi HTTPS endpoint thay vì truy cập trực tiếp máy chủ.
+* Sẵn sàng chạy backend trên EC2 tuần 5.

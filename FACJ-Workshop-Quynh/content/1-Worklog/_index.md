@@ -1,27 +1,28 @@
 ---
-title: "Worklog"
+title: "Work Log"
 date: 2026-06-08
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-**On this page**, I summarize my internship worklog for the **SmartHome_IoT** project at FCAJ. The internship lasts **8 weeks**, from **08/06/2026** to **31/07/2026**. I am responsible for **Frontend** — **Figma** UI design, building the **React dashboard**, and **S3 static hosting** deployment. In parallel with the project, I learn the AWS services needed for frontend work (shared account, IAM, VPC, EC2, S3, Cognito) to understand how the dashboard connects to the backend and runs on cloud.
+This page summarizes my **8-week** worklog from **08/06/2026** to **31/07/2026**. I owned **frontend** for **SmartHome_IoT** — Figma design, React dashboard, static hosting, and Cognito login. I also learned AWS basics to understand how the UI connects to backend and cloud.
 
-Weekly summary:
+Content by week:
 
-**Week 1:** [Onboarding, proposing dashboard ideas in the team meeting](1.1-week1/)
+**Week 1:** [Onboarding, dashboard proposal, frontend role](1.1-week1/)
 
-**Week 2:** [Shared AWS account, preview S3 static hosting for React](1.2-week2/)
+**Week 2:** [React demo on S3, UX alignment](1.2-week2/)
 
-**Week 3:** [IAM basics, researching Cognito for the login UI](1.3-week3/)
+**Week 3:** [IAM basics, Cognito research, login wireframe](1.3-week3/)
 
-**Week 4:** [VPC (general learning), paper wireframes for the dashboard](1.4-week4/)
+**Week 4:** [VPC overview, dashboard wireframes](1.4-week4/)
 
-**Week 5:** [EC2 — understanding API endpoints for frontend integration](1.5-week5/)
+**Week 5:** [Backend API understanding, API contract](1.5-week5/)
 
-**Week 6:** [S3 deep dive + Figma UI (sensor cards, control panel, Pomodoro, door alerts)](1.6-week6/)
+**Week 6:** [Complete Figma UI, design system](1.6-week6/)
 
-**Week 7:** [React/Vite implementation, backend API integration, Cognito login flow UI](1.7-week7/)
+**Week 7:** [React build, API and Cognito integration](1.7-week7/)
 
-**Week 8:** [Deploy frontend (S3/Amplify), UI polish, demo screenshots for the report](1.8-week8/)
+**Week 8:** [Public deploy, UI polish, final demo](1.8-week8/)
+

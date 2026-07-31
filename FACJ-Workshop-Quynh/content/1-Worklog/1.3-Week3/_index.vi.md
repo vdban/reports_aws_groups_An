@@ -8,23 +8,20 @@ pre: " <b> 1.3. </b> "
 
 ### Mục tiêu tuần 3:
 
-* Học **IAM** cơ bản: user, group, policy, least privilege.
-* Nghiên cứu **Amazon Cognito** cho luồng đăng nhập/đăng ký trên dashboard.
-* Phác thảo wireframe sơ bộ màn hình Login và trang chủ sau đăng nhập.
-* Họp nhóm: thống nhất yêu cầu xác thực người dùng cho frontend.
+* Học IAM ở mức frontend cần biết.
+* Nghiên cứu Cognito cho đăng nhập người dùng.
+* Phác thảo màn hình login trên Figma.
 
 ### Công việc thực hiện trong tuần:
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | ---- | --------- | ------------ | ---------------- | ------------------ |
-| 1 | - Học IAM: user, group, policy JSON, managed vs inline policy <br> - Kiểm tra policy IAM user em đang dùng cho S3 lab | 22/06/2026 | 22/06/2026 | <https://docs.aws.amazon.com/iam/> |
-| 2 | - Thực hành tạo IAM group `frontend-dev`; gắn policy S3 read-only cho preview bucket <br> - Ghi chú nguyên tắc **least privilege** khi deploy frontend | 23/06/2026 | 23/06/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html> |
-| 3 | - Nghiên cứu **Cognito User Pool**: sign-up, sign-in, JWT token, hosted UI <br> - So sánh Cognito Hosted UI vs custom login form trong React | 24/06/2026 | 24/06/2026 | <https://docs.aws.amazon.com/cognito/> |
-| 4 | - Phác thảo **wireframe Login**: email/password, nút đăng nhập, trạng thái lỗi thân thiện <br> - Ghi chú UX: loading spinner, thông báo sai mật khẩu rõ ràng, không lộ thông tin nhạy cảm | 25/06/2026 | 25/06/2026 | Figma / giấy |
-| 5 | - Họp nhóm: trình bày phác thảo login UI và luồng Cognito <br> - Thống nhất dashboard chỉ hiển thị sau xác thực; em chuẩn bị moodboard màu sắc giao diện | 26/06/2026 | 26/06/2026 | Repo SmartHome_IoT |
+| 1 | - Đọc tài liệu IAM; hiểu user, group, policy là gì. | 22/06/2026 | 22/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - So sánh Cognito với các cách auth khác; chọn Cognito cho dự án. | 23/06/2026 | 23/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Thiết kế moodboard và wireframe màn login. | 24/06/2026 | 24/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Trao đổi với backend về luồng đăng nhập và token. | 25/06/2026 | 25/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Review wireframe với nhóm; nhận góp ý trước khi vào Figma chi tiết. | 26/06/2026 | 26/06/2026 | Portal FCAJ / <https://cloudjourney.awsstudygroup.com/> |
 
 ### Thành quả tuần 3:
 
-* Nắm **IAM** cơ bản và cách policy ảnh hưởng quyền truy cập S3 của frontend.
-* Hiểu **Cognito User Pool** phù hợp cho màn hình đăng nhập SmartHome dashboard.
-* Có wireframe sơ bộ màn Login với UX thân thiện, dễ hiểu cho người dùng.
-* Nhóm thống nhất yêu cầu auth trước khi vào dashboard.
+* Cognito được chọn cho auth.
+* Wireframe login sẵn sàng làm Figma.
